@@ -29,7 +29,7 @@ a {
   /* Add your background image and overlay gradient */
   background:
     linear-gradient(135deg, rgba(25, 26, 25, 0.7) 0%, rgba(45, 46, 45, 0.7) 100%), /* dark overlay */
-    url('media/bg.jpg');  /* your image path */
+    url('bg.jpg');  /* your image path */
   background-size: cover;      /* cover entire hero area */
   background-position: center; /* center the image */
   background-repeat: no-repeat;
