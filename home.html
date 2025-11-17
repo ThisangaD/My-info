@@ -1,125 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Thisanga Perera | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="image (1).png">
-</head>
-
-<body>
-
-    <!-- 🔹 Navigation Panel -->
-    <header>
-        <div class="logo">My Info</div>
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thisanga Perera | Home</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html">Thisanga Perera</a>
+            </div>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#feedback">Feedback</a></li>
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="achievements.html">Achievements</a>
+                </li>
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+                <li>
+                    <a href="feedback.html">Feedback</a>
+                </li>
             </ul>
         </nav>
-    </header>
-
-    <!-- 🔹 Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h1>Thisanga Perera</h1>
-            <hr>
-            <img src="media/image (1).png" alt="My Photo" width="200" class="profile-img">
-            <p>
-                Hi, I’m <b>Thisanga Perera</b>, a <b>19-year-old</b> undergraduate student at <b>IIT</b>, currently pursuing a degree in <b>Computer Science</b>. I’m passionate about software development, especially Python programming, and I aim to become a software engineer and researcher in the field.
-            </p>
-            <p><b>Birthday:</b> 25<sup>th</sup> of September</p>
-			<p>Learn more about my university: <a href="https://www.iit.ac.lk" target="_blank">Informatics Institute of Technology</a></p>
-
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello, I’m Thisanga Perera</h1>
+                <p>Computer Science Undergraduate | Software Developer | Passionate Musician</p>
+                <a href="about.html" class="btn-primary">Learn More About Me</a>
+            </div>
         </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><h4>Python Programming</h4><img src="media/python.gif" alt="Python" width="140"></li>
-                <li><h4>Music Performance</h4><img src="media/music.gif" alt="Music" width="140"></li>
-                <li><h4>Web Development</h4><img src="media/web.gif" alt="Web" width="100"></li>
-                <li><h4>Time Management</h4><img src="media/1-min.gif" alt="Time Management" width="100"></li>
-                <li><h4>Problem-Solving</h4><img src="media/brain.gif" alt="Problem Solving" width="90"></li>
+        <!-- Highlights Section -->
+        <section class="section highlights">
+            <h2>What I Bring</h2>
+            <ul>
+                <li>Strong programming skills and software development experience</li>
+                <li>Creative problem solver with leadership abilities</li>
+                <li>Confident stage performer with great communication skills</li>
+                <li>Committed to combining technology and creativity for innovative solutions</li>
             </ul>
         </section>
+        <button id="goTopBtn" title="Go to top">↑</button>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
+        </footer>
+        <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('fade-in');
+  });
 
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <table class="achievements-table">
-                <thead>
-                    <tr><th>Year</th><th>Achievement</th><th>Description</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>2022</td><td>All-Island Eastern Music Winner</td><td>First place in national competition.</td></tr>
-                    <tr><td>2020</td><td>Visharada Exam Passed</td><td>Completed with distinction.</td></tr>
-                    <tr><td>2024</td><td>Task Manager Project</td><td>Functional CRUD app in Python.</td></tr>
-                    <tr><td>2021</td><td>Pass the G.C.E O/L exam</td><td>Pass the exam with 9As.</td></tr>
-                </tbody>
-            </table>
-        </section>
-		
-		<!-- 🔹 Song Section -->
-		<section id="song">
-			<h2>🎵 My Original Song</h2>
-			<p>Listen to my original composition, "<strong>Sondura Nubai Mage</strong>":</p>
-			<div class="song-embed">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/PLP_m_gfUwY" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-					allowfullscreen></iframe>
-			</div>
-		</section>
+  const goTopBtn = document.getElementById("goTopBtn");
 
+  // When the user scrolls down 300px from the top of the document, show the button
+  window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      goTopBtn.style.display = "block";
+    } else {
+      goTopBtn.style.display = "none";
+    }
+  };
 
-        <!-- Feedback Section -->
-        <section id="feedback">
-            <h2>Feedback</h2>
-            <form class="feedback-form">
-                <label for="name">Full Name: *</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="phone">Phone Number: *</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label>Gender: *</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="gender" value="male" required> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="other"> Other</label>
-                </div>
-
-                <label for="topic">Topic of Feedback:</label>
-                <select id="topic" name="topic">
-                    <option value="portfolio">Portfolio Design</option>
-                    <option value="content">Content Quality</option>
-                    <option value="skills">Skills Section</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="comments">Your Comments:</label>
-                <textarea id="comments" name="comments" rows="5"></textarea>
-
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- 🔹 Back to Top -->
-    <a href="#" class="back-to-top">↑</a>
-
-    <!-- 🔹 Footer -->
-    <footer>
-        <p>© 2025 Thisanga Perera | Email: thisangaperera@gmail.com | Phone: +94 71 234 5678</p>
-    </footer>
-<script src = "script.js"></script>
-</body>
+  // When the user clicks on the button, scroll to the top smoothly
+  goTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+        </script>
+    </body>
 </html>
-
 
