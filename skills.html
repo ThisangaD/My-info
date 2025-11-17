@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="skills.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home1.html">Thisanga Perera</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h2>Programming Languages</h2>
+                <table>
+                    <tr>
+                        <td><strong>Python</strong></td>
+                        <td>Strong proficiency in Python programming, experienced in projects and problem-solving.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Java</strong></td>
+                        <td>Solid understanding of Java fundamentals and object-oriented programming.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JavaScript</strong></td>
+                        <td>Experience with client-side scripting and basic DOM manipulation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HTML & CSS</strong></td>
+                        <td>Skilled in building responsive and clean user interfaces.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <div class="skill-category">
+                <h2>Frameworks & Tools</h2>
+                <table>
+                    <tr>
+                        <td>Git & GitHub</td>
+                        <td>Version control and collaboration</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Primary development environment</td>
+                    </tr>
+                    <tr>
+                        <td>Tkinter</td>
+                        <td>Basic GUI development knowledge</td>
+                    </tr>
+                    <tr>
+                        <td>REST APIs & JSON</td>
+                        <td>Familiar with handling data and endpoints</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category">
+                <h2>Soft Skills</h2>
+                <table>
+                    <tr>
+                        <td>Problem-solving</td>
+                        <td>Analytical thinking and solutions-oriented</td>
+                    </tr>
+                    <tr>
+                        <td>Communication</td>
+                        <td>Snhala & English</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>Experience from school & university societies and projects</td>
+                    </tr>
+                    <tr>
+                        <td>Creativity</td>
+                        <td>Combining music and technology innovatively</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="goTopBtn" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const goTopBtn = document.getElementById("goTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                goTopBtn.style.display = "block";
+            } else {
+                goTopBtn.style.display = "none";
+            }
+        };
+        goTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>

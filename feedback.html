@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" href="global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+<div class="logo"><a href="home1.html">Thisanga Perera</a></div>
+            <ul class="nav-links">
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="achievements.html">Achievements</a>
+                </li>
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+                <li>
+                    <a href="feedback.html" class="active">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="goTopBtn" title="Go to top">↑</button>
+        <footer>
+            <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
+        </footer>
+        <script>
+  // Get the button:
+  const goTopBtn = document.getElementById("goTopBtn");
+
+  // When the user scrolls down 300px from the top of the document, show the button
+  window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      goTopBtn.style.display = "block";
+    } else {
+      goTopBtn.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top smoothly
+  goTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+        </script>
+    </body>
+</html>

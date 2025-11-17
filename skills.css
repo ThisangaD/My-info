@@ -1,0 +1,86 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BASE ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+/* ---------- SKILLS SECTION ---------- */
+.skills-section {
+    max-width: 1100px;
+    margin: 3rem auto 5rem auto;
+    padding: 2rem;
+    color: #444;
+}
+
+.skills-section h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #191A19;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column; /* stack boxes vertically */
+    gap: 2rem;
+}
+
+
+/* ---------- SKILL CATEGORY BOX ---------- */
+.skill-category {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    flex: 1 1 100%;
+    color: #444;
+}
+
+.skill-category h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #191A19;
+    border-bottom: 3px solid #E8DDB5;
+    padding-bottom: 0.3rem;
+}
+
+/* ---------- TABLE STYLING ---------- */
+.skill-category table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.skill-category td {
+    padding: 0.6rem 0.8rem;
+    vertical-align: top;
+    border-bottom: 1px solid #E8DDB5;
+}
+
+.skill-category td:first-child {
+    font-weight: 600;
+    width: 30%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill-category {
+        flex: 1 1 100%;
+    }
+}

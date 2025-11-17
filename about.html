@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home1.html">Thisanga Perera</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="about.html" class="active">About Me</a>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="achievements.html">Achievements</a>
+                </li>
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+                <li>
+                    <a href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="media/image (2).png" alt="Thisanga Perera">
+                </div>
+                <div class="about-text">
+                    <h1>Hi, I’m Thisanga Perera</h1>
+                    <p>
+                        I’m a Computer Science undergraduate at IIT with a strong passion for software development, particularly Python programming. I am dedicated to advancing my skills to become a software engineer and researcher in the tech industry. My journey began with a natural curiosity about how things work, which quickly grew into a deep enthusiasm for problem-solving and creating innovative solutions. I thrive at the intersection of technology and creativity, constantly seeking to blend these two worlds through meaningful projects.
+                    </p>
+                    <p>
+                        Beyond coding, I am also a passionate musician. Whether composing original music or performing on stage, I enjoy expressing myself creatively and exploring new tools that enhance both my technical and artistic pursuits. I am committed to continuous learning and growth, aiming to contribute to impactful technological advancements while nurturing my creative side.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Timeline / Education Journey -->
+        <section class="timeline-section">
+            <h2>My Journey</h2>
+            <ul class="timeline">
+                <li>
+                    <span class="year">2005</span>
+                    Born on September 25th.
+                </li>
+                <li>
+                    <span class="year">2011</span>
+                    Began my educational journey at Nalanda College, entering Grade 1.
+                </li>
+                <li>
+                    <span class="year">2015</span>
+                    Achieved success in the Grade 5 Scholarship Examination.
+                </li>
+                <li>
+                    <span class="year">2021</span>
+                    Successfully completed the G.C.E. Ordinary Level examination.
+                </li>
+                <li>
+                    <span class="year">2024</span>
+                    Completed the G.C.E. Advanced Level examination.
+                </li>
+                <li>
+                    <span class="year">2025</span>
+                    Commenced my Bachelor’s degree in Computer Science at IIT.
+                </li>
+            </ul>
+        </section>
+        <!-- Interests Section -->
+        <section class="interests-section">
+            <h2>Beyond Coding & Music</h2>
+            <p>When I’m not working on tech or music projects, I enjoy:</p>
+            <ul>
+                <li>Traveling and exploring new cultures</li>
+                <li>Photography & videography</li>
+                <li>Gaming & esports</li>
+                <li>Playing Cricket & Swimming</li>
+            </ul>
+        </section>
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>
+                <b>Email:</b>
+                <a href="mailto:thisanga.dinath@gmail.com">thisanga.dinath@gmail.com</a>
+            </p>
+            <p>
+                <b>Phone:</b>
+                +94 71 955 8270
+            </p>
+            <p>
+                <b>LinkedIn:</b>
+                <a href="https://www.linkedin.com/in/thisanga-perera-299b032b7">linkedin.com/in/Thisanga Perera</a>
+            </p>
+            <p>
+                <b>GitHub:</b>
+                <a href="https://github.com/ThisangaD" target="_blank" rel="noopener noreferrer">github.com/ThisangaD</a>
+            </p>
+            <p>
+                <b>HackerRank:</b>
+                <a href="https://www.hackerrank.com/profile/thisanga_dinath" target="_blank" rel="noopener noreferrer">hackerrank.com/Thisanga Perera</a>
+            </p>
+        </section>
+        <!-- Scroll to Top Button -->
+        <button id="goTopBtn" title="Go to top">↑</button>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
+        </footer>
+        <!-- Go to Top Script -->
+        <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+
+    goTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+        </script>
+    </body>
+</html>

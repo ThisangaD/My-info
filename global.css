@@ -1,0 +1,77 @@
+/* ---------- HEADER (NAVBAR) ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191A19;  /* Dark green */
+  padding: 1rem 2rem;
+  color: #F2F2F2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #F2F2F2;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #E8DDB5;  /* Soft yellow */
+  color: #191A19;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #191A19;
+  color: #F2F2F2;
+  font-size: 0.9rem;
+}
+#goTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none; /* Hidden by default */
+  background-color: #E8DDB5; /* Soft yellow */
+  color: #191A19;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+#goTopBtn:hover {
+  background-color: #d6c79e;
+}
+
+.nav-links a.active {
+  color: #E8DDB5; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #E8DDB5; /* Optional underline */
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}

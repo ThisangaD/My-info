@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thisanga Perera | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="image (1).png">
+</head>
+
+<body>
+
+    <!-- 🔹 Navigation Panel -->
+    <header>
+        <div class="logo">My Info</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h1>Thisanga Perera</h1>
+            <hr>
+            <img src="media/image (1).png" alt="My Photo" width="200" class="profile-img">
+            <p>
+                Hi, I’m <b>Thisanga Perera</b>, a <b>19-year-old</b> undergraduate student at <b>IIT</b>, currently pursuing a degree in <b>Computer Science</b>. I’m passionate about software development, especially Python programming, and I aim to become a software engineer and researcher in the field.
+            </p>
+            <p><b>Birthday:</b> 25<sup>th</sup> of September</p>
+			<p>Learn more about my university: <a href="https://www.iit.ac.lk" target="_blank">Informatics Institute of Technology</a></p>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><h4>Python Programming</h4><img src="media/python.gif" alt="Python" width="140"></li>
+                <li><h4>Music Performance</h4><img src="media/music.gif" alt="Music" width="140"></li>
+                <li><h4>Web Development</h4><img src="media/web.gif" alt="Web" width="100"></li>
+                <li><h4>Time Management</h4><img src="media/1-min.gif" alt="Time Management" width="100"></li>
+                <li><h4>Problem-Solving</h4><img src="media/brain.gif" alt="Problem Solving" width="90"></li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <table class="achievements-table">
+                <thead>
+                    <tr><th>Year</th><th>Achievement</th><th>Description</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2022</td><td>All-Island Eastern Music Winner</td><td>First place in national competition.</td></tr>
+                    <tr><td>2020</td><td>Visharada Exam Passed</td><td>Completed with distinction.</td></tr>
+                    <tr><td>2024</td><td>Task Manager Project</td><td>Functional CRUD app in Python.</td></tr>
+                    <tr><td>2021</td><td>Pass the G.C.E O/L exam</td><td>Pass the exam with 9As.</td></tr>
+                </tbody>
+            </table>
+        </section>
+		
+		<!-- 🔹 Song Section -->
+		<section id="song">
+			<h2>🎵 My Original Song</h2>
+			<p>Listen to my original composition, "<strong>Sondura Nubai Mage</strong>":</p>
+			<div class="song-embed">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/PLP_m_gfUwY" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen></iframe>
+			</div>
+		</section>
+
+
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form class="feedback-form">
+                <label for="name">Full Name: *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number: *</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label>Gender: *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <label for="topic">Topic of Feedback:</label>
+                <select id="topic" name="topic">
+                    <option value="portfolio">Portfolio Design</option>
+                    <option value="content">Content Quality</option>
+                    <option value="skills">Skills Section</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Your Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 🔹 Back to Top -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- 🔹 Footer -->
+    <footer>
+        <p>© 2025 Thisanga Perera | Email: thisangaperera@gmail.com | Phone: +94 71 234 5678</p>
+    </footer>
+<script src = "script.js"></script>
+</body>
+</html>
+
+
