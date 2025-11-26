@@ -1,0 +1,95 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #444544;
+  line-height: 1.6;
+  opacity: 0;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.section h2 {
+  color: #191A19;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #E8DDB5;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* ---------- ACHIEVEMENT CARDS ---------- */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 5px solid #E8DDB5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card h3 {
+  color: #191A19;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.achievement-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .achieve-content h1 {
+    font-size: 2rem;
+  }
+
+  .achieve-content p {
+    font-size: 1rem;
+  }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    background: #191A19;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 1rem 0;
+}
