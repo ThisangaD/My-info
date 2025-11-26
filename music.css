@@ -1,0 +1,135 @@
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F2F2F2;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* -------- HERO SECTION -------- */
+.music-hero {
+    background-color: #191A19;
+    color: #E8DDB5;
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.music-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.music-hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* -------- MUSIC SECTIONS -------- */
+.music-section {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+}
+
+.music-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #191A19;
+    margin-bottom: 1.5rem;
+}
+
+/* -------- MUSIC CARD -------- */
+.music-card {
+    background-color: #fff;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.music-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.music-info h3 {
+    font-size: 1.6rem;
+    color: #191A19;
+    margin-bottom: 0.8rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #191A19;
+    color: #E8DDB5;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* -------- GRID FOR COVERS -------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.music-card.small {
+    flex-direction: column;
+    text-align: center;
+}
+
+.music-card.small img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* -------- PERFORMANCE GALLERY -------- */
+.performance-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.performance-gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.center-text {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+    .music-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .music-card img {
+        margin: 0 auto;
+    }
+}
