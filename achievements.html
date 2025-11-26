@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
-        <link rel="stylesheet" href="achievements.css">
-        <link rel="stylesheet" href="global.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-<div class="logo"><a href="home.html">Thisanga Perera</a></div>
-            <ul class="nav-links">
-                <li>
-                    <a href="about.html">About Me</a>
-                </li>
-                <li>
-                    <a href="skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="achievements.html" class="active">Achievements</a>
-                </li>
-                <li>
-                    <a href="music.html">Music</a>
-                </li>
-            </ul>
-        </nav>
-        <button id="goTopBtn" title="Go to top">↑</button>
-        <footer>
-            <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
-        </footer>
-        <script>
-  // Get the button:
-  const goTopBtn = document.getElementById("goTopBtn");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thisanga Perera | Achievements</title>
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  // When the user scrolls down 300px from the top of the document, show the button
-  window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      goTopBtn.style.display = "block";
-    } else {
-      goTopBtn.style.display = "none";
-    }
-  };
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home1.html">Thisanga Perera</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="achievements.html" class="active">Achievements</a></li>
+            <li><a href="music.html">Music</a></li>
+        </ul>
+    </nav>
 
-  // When the user clicks on the button, scroll to the top smoothly
-  goTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+    <!-- Header Section -->
+    
+
+    <!-- Achievements Section -->
+    <section class="section achievements">
+        <h2>Highlights</h2>
+
+        <div class="achievements-grid">
+
+            <div class="achievement-card">
+                <h3>🏆 1st Place – All Island Eastern Music Competition (2022)</h3>
+                <p>
+                    Awarded first place for exceptional performance in Eastern music at the national-level competition.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>🎓 Visharada Certificate</h3>
+                <p>
+                    Successfully completed the Visharada exam, demonstrating professional-level music proficiency.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>🎤 Performed on Many Stages</h3>
+                <p>
+                    Experienced performer with confidence and stage presence, singing across multiple major stages.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>💻 Python Programming Certificate – University of Moratuwa</h3>
+                <p>
+                    Completed programming coursework and gained strong foundational knowledge in Python.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>📚 Completed GCE A/L – Nalanda College</h3>
+                <p>
+                    Completed grade 1 to 13 at Nalanda College, Colombo 10.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>👨‍🏫 Chief Organizer – Saukyadhana Unit</h3>
+                <p>
+                    Led one of the biggest school societies, strengthening leadership, teamwork, and decision-making skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <button id="goTopBtn" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Thisanga Perera. All rights reserved.</p>
+    </footer>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('fade-in');
     });
-  });
-        </script>
-    </body>
-</html>
 
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            goTopBtn.style.display = "block";
+        } else {
+            goTopBtn.style.display = "none";
+        }
+    };
+
+    goTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
